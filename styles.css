@@ -358,15 +358,17 @@ body::before {
     transition: all 0.3s ease;
 }
 
-.realm-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 0.1;
-    pointer-events: none;
+.realm-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 2.5rem;
+    text-align: center;
+    border: 3px solid;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
 
 .zeus-realm {

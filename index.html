@@ -120,7 +120,7 @@
                         </div>
                         <div class="spec-item">
                             <span class="spec-label">Engine:</span>
-                            <span class="spec-value">Unity [INSERT VERSION]</span>
+                            <span class="spec-value">Unity 6000.0.44f1</span>
                         </div>
                         <div class="spec-item">
                             <span class="spec-label">Rating:</span>
@@ -239,20 +239,18 @@
                 <div class="playtest-details">
                     <div class="playtest-info">
                         <p><strong>Development Phase:</strong> Core mechanics implementation</p>
-                        <p><strong>Test Method:</strong> In-person observation with think-aloud protocol</p>
-                        <p><strong>Participants:</strong> 5 students (3 CS majors, 2 non-CS), ages 19-22</p>
+                        <p><strong>Test Method:</strong> In-person observation</p>
+                        <p><strong>Participants:</strong> 5 students (3 CS majors, 2 non-CS), ages 19–22</p>
                     </div>
                     <div class="playtest-feedback">
                         <h4>Key Feedback:</h4>
                         <ul>
-                            <li>[INSERT SPECIFIC FEEDBACK 1]</li>
-                            <li>[INSERT SPECIFIC FEEDBACK 2]</li>
-                            <li>[INSERT SPECIFIC FEEDBACK 3]</li>
+                            <li><strong>Missing character sprites:</strong> Playtesters noted that there were no visual sprites for the player or enemy, making it hard to engage with the combat system.</li>
+                            <li><strong>Spam-Attack imbalance:</strong> Because “Attack” was always available without drawback, players just spammed Attack—undermining the intended rock-paper-scissors dynamic (Attack beats Grab, Grab beats Defend, Defend beats Attack).</li>
                         </ul>
                         <h4>Changes Made:</h4>
                         <ul>
-                            <li>[INSERT CHANGE 1]</li>
-                            <li>[INSERT CHANGE 2]</li>
+                            <li><strong>Rebalanced move costs:</strong> Increased the cost (or cooldown) of repeated “Attack” inputs so that spamming Attack no longer guaranteed success. This ensures players consider Grab or Defend strategically.</li>
                         </ul>
                     </div>
                 </div>
@@ -264,20 +262,19 @@
                 <div class="playtest-details">
                     <div class="playtest-info">
                         <p><strong>Development Phase:</strong> Level design and UI implementation</p>
-                        <p><strong>Test Method:</strong> Remote testing via screen share</p>
-                        <p><strong>Participants:</strong> 7 participants from various gaming backgrounds</p>
+                        <p><strong>Test Method:</strong> Remote testing via screen share (Discord)</p>
+                        <p><strong>Participants:</strong> 7 participants (mixed gaming backgrounds: casual, indie-dev, competitive)</p>
                     </div>
                     <div class="playtest-feedback">
                         <h4>Key Feedback:</h4>
                         <ul>
-                            <li>[INSERT SPECIFIC FEEDBACK 1]</li>
-                            <li>[INSERT SPECIFIC FEEDBACK 2]</li>
-                            <li>[INSERT SPECIFIC FEEDBACK 3]</li>
+                            <li><strong>Still missing polished sprites:</strong> Players commented that the placeholder art made it difficult to feel immersed—“we need proper character visuals.”</li>
+                            <li><strong>Combat felt too chance-based:</strong> Several testers said they were rolling dice rather than making strategic choices; the game lacked a “meaningful trade-off” and felt random.</li>
                         </ul>
                         <h4>Changes Made:</h4>
                         <ul>
-                            <li>[INSERT CHANGE 1]</li>
-                            <li>[INSERT CHANGE 2]</li>
+                            <li><strong>Added Rest mechanic:</strong> Introduced a “Rest” option that recovers a small amount of health but costs you a turn. This gives players a deliberate choice between offense and defense rather than relying on pure luck.</li>
+                            <li><strong>Added sprite/background files:</strong> Added sprites to improve visual clarity and player engagement alongside level backgrounds for respective bosses.</li>
                         </ul>
                     </div>
                 </div>
@@ -289,57 +286,44 @@
                 <div class="playtest-details">
                     <div class="playtest-info">
                         <p><strong>Development Phase:</strong> Polish and final adjustments</p>
-                        <p><strong>Test Method:</strong> Structured gameplay sessions with post-game surveys</p>
-                        <p><strong>Participants:</strong> 12 players (diverse demographics and gaming experience)</p>
+                        <p><strong>Test Method:</strong> Structured gameplay</p>
+                        <p><strong>Participants:</strong> 12 players (ages 18–22; varying skill levels)</p>
                     </div>
                     <div class="playtest-feedback">
                         <h4>Detailed Feedback:</h4>
                         <div class="feedback-grid">
                             <div class="feedback-category">
-                                <h5>Gameplay (Average: X/5)</h5>
+                                <h5>Combat Transparency</h5>
                                 <ul>
-                                    <li>[INSERT FEEDBACK 1]</li>
-                                    <li>[INSERT FEEDBACK 2]</li>
+                                    <li>Players and the professor both requested that the Boss’s available move set be displayed on-screen alongside our active buffs. This would allow for more strategic planning rather than guessing what the enemy might do next.</li>
+                                    <li>Eight out of twelve testers specifically said that knowing the enemy’s next possible actions made them feel more in control, rather than feeling “caught off-guard.”</li>
                                 </ul>
                             </div>
                             <div class="feedback-category">
-                                <h5>Controls (Average: X/5)</h5>
+                                <h5>Buff Clarity</h5>
                                 <ul>
-                                    <li>[INSERT FEEDBACK 1]</li>
-                                    <li>[INSERT FEEDBACK 2]</li>
-                                </ul>
-                            </div>
-                            <div class="feedback-category">
-                                <h5>Visuals (Average: X/5)</h5>
-                                <ul>
-                                    <li>[INSERT FEEDBACK 1]</li>
-                                    <li>[INSERT FEEDBACK 2]</li>
-                                </ul>
-                            </div>
-                            <div class="feedback-category">
-                                <h5>Overall Fun (Average: X/5)</h5>
-                                <ul>
-                                    <li>[INSERT FEEDBACK 1]</li>
-                                    <li>[INSERT FEEDBACK 2]</li>
-                                </ul>
+                                    <li>Most testers agreed that displaying active buffs (e.g., “Soul Shield: Heal +1 on Defend,” “Tidal Pull: Grab +1 dmg”) under the player’s health bar helped them decide when to use Defend or Grab.</li>
+                                    <li>Two players recommended showing a tooltip or small icon animation whenever a buff activates, but overall they felt the current text-only method was sufficient.</li>
+                            </ul>
                             </div>
                         </div>
                         <h4>Planned Changes:</h4>
                         <ul>
-                            <li>[INSERT PLANNED CHANGE 1]</li>
-                            <li>[INSERT PLANNED CHANGE 2]</li>
-                            <li>[INSERT PLANNED CHANGE 3]</li>
+                            <li><strong>Start Screen/Button:</strong> Implement a start screen with a “Play” button that leads into the first level, improving onboarding and flow.</li>
+                            <li><strong>Cutscenes:</strong> Introduce brief opening and mid-battle cutscenes to set context before fights and highlight key story moments.</li>
+                            <li><strong>Ending Scene:</strong> Create a closing sequence and credits screen once the cyclops is defeated, giving a satisfying conclusion to the game.</li>
                         </ul>
                         <h4>Future Recommendations:</h4>
                         <ul>
-                            <li>[INSERT RECOMMENDATION 1]</li>
-                            <li>[INSERT RECOMMENDATION 2]</li>
+                            <li>Introduce a brief tutorial overlay on first launch showing how rock-paper-scissors interactions work (e.g., “Attack beats Grab, Grab beats Defend, Defend beats Attack, Rest recovers HP”).</li>
+                            <li>Consider adding a “combo gauge” that fills when players successfully predict and counter the cyclops’s move, encouraging deeper strategic thinking.</li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <!-- 4. Credits Section -->
     <section id="team" class="section section-dark">
@@ -348,38 +332,68 @@
             <div class="team-grid">
                 <div class="team-member">
                     <div class="member-info">
-                        <h3>[TEAM MEMBER 1 NAME]</h3>
-                        <p class="member-role">[ROLE - e.g., Lead Developer, Game Designer]</p>
-                        <p class="member-contact">[EMAIL@example.com]</p>
+                        <h3>Aryan Khanna</h3>
+                        <p class="member-role">Backend Developer / Game Logic Engineer</p>
+                        <p class="member-contact">aryan.khanna@example.com</p>
                     </div>
                     <div class="member-contributions">
                         <h4>Key Contributions:</h4>
                         <ul>
-                            <li>[CONTRIBUTION 1]</li>
-                            <li>[CONTRIBUTION 2]</li>
+                            <li>Implemented core game logic for combat resolution (Attack, Grab, Defend, Rest).</li>
+                            <li>Collaborated on cutscene scripting for seamless transitions into boss encounters.</li>
                         </ul>
                     </div>
                 </div>
                 
                 <div class="team-member">
                     <div class="member-info">
-                        <h3>[TEAM MEMBER 2 NAME]</h3>
-                        <p class="member-role">[ROLE]</p>
-                        <p class="member-contact">[EMAIL@example.com]</p>
+                        <h3>Veer Saini</h3>
+                        <p class="member-role">Backend Developer / Combat Systems Engineer</p>
+                        <p class="member-contact">veer.saini@example.com</p>
                     </div>
                     <div class="member-contributions">
                         <h4>Key Contributions:</h4>
                         <ul>
-                            <li>[CONTRIBUTION 1]</li>
-                            <li>[CONTRIBUTION 2]</li>
+                            <li>Designed and balanced health, attack, and buff mechanics to reinforce rock–paper–scissors dynamics.</li>
+                            <li>Integrated buff effects (e.g., damage modifiers, cooldowns) to ensure consistent gameplay feel.</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Add more team members as needed -->
+                <div class="team-member">
+                    <div class="member-info">
+                        <h3>Rajbir Sandhu</h3>
+                        <p class="member-role">Frontend Developer / Sprite & Animation Lead</p>
+                        <p class="member-contact">rajbir.sandhu@example.com</p>
+                    </div>
+                    <div class="member-contributions">
+                        <h4>Key Contributions:</h4>
+                        <ul>
+                            <li>Responsible for all character sprites and frame-by-frame animations, including idle, attack, grab, defense, death, and hurt states.</li>
+                            <li>Determined sprite positioning and timing for player and cyclops behaviors, ensuring each animation feels responsive and cohesive in combat.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="member-info">
+                        <h3>Mario Markovic</h3>
+                        <p class="member-role">Frontend Developer / Environment & Cutscene Artist</p>
+                        <p class="member-contact">mario.markovic@example.com</p>
+                    </div>
+                    <div class="member-contributions">
+                        <h4>Key Contributions:</h4>
+                        <ul>
+                            <li>Created and implemented all background art, including cave environments, torches, and atmospheric details for each level.</li>
+                            <li>Worked on cutscene integration, positioning background elements to support opening and mid-battle narrative sequences.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+
 
     <!-- 8. Source Code Section -->
     <section id="source-code" class="section">
@@ -395,12 +409,12 @@
                     </a>
                 </div>
                 
-                <div class="project-details">
+                <!--<div class="project-details">
                     <h3>Project Information</h3>
                     <div class="details-grid">
                         <div class="detail-item">
                             <span class="detail-label">Unity Version:</span>
-                            <span class="detail-value">[INSERT UNITY VERSION - e.g., 2022.3.21f1]</span>
+                            <span class="detail-value">Unity 6000.0.44f1</span>
                         </div>
                         <div class="detail-item">
                             <span class="detail-label">Project Website:</span>
@@ -411,7 +425,7 @@
                             <span class="detail-value">[INSERT DATE]</span>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </section>
@@ -432,32 +446,35 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>[ASSET NAME 1]</td>
-                            <td>[TYPE - e.g., Sound Effect]</td>
-                            <td><a href="[URL]" target="_blank">[SOURCE NAME]</a></td>
-                            <td>[LICENSE - e.g., CC0, Free for commercial use]</td>
+                            <td>Gladiator #6 2D Pixel Art</td>
+                            <td>Sprite/Animation Pack</td>
+                            <td><a href="https://xzany.itch.io/gladiator-6-2d-pixel-art" target="_blank">Mattz Art on itch.io</a></td>
+                            <td>Free for personal/commercial use; do not resell or redistribute as standalone; credit appreciated but not required :contentReference[oaicite:9]{index=9}</td>
                         </tr>
                         <tr>
-                            <td>[ASSET NAME 2]</td>
-                            <td>[TYPE - e.g., 3D Model]</td>
-                            <td><a href="[URL]" target="_blank">[SOURCE NAME]</a></td>
-                            <td>[LICENSE]</td>
+                            <td>Cerberus 2D Pixel Art</td>
+                            <td>Sprite/Animation Pack</td>
+                            <td><a href="https://xzany.itch.io/cerberus-2d-pixel-art" target="_blank">Mattz Art on itch.io</a></td>
+                            <td>Free for personal/commercial use; do not resell or redistribute as standalone; credit appreciated but not required :contentReference[oaicite:12]{index=12}</td>
                         </tr>
                         <tr>
-                            <td>[ASSET NAME 3]</td>
-                            <td>[TYPE - e.g., Texture]</td>
-                            <td><a href="[URL]" target="_blank">[SOURCE NAME]</a></td>
-                            <td>[LICENSE]</td>
+                            <td>Medusa 2D Pixel Art</td>
+                            <td>Sprite/Animation Pack</td>
+                            <td><a href="https://xzany.itch.io/medusa-2d-pixel-art" target="_blank">Mattz Art on itch.io</a></td>
+                            <td>Free for personal/commercial use; do not resell or redistribute as standalone; credit appreciated but not required :contentReference[oaicite:11]{index=11}</td>
                         </tr>
-                        <!-- Add more rows as needed -->
+                        <tr>
+                            <td>Cyclops 2D Pixel Art</td>
+                            <td>Sprite/Animation Pack</td>
+                            <td><a href="https://xzany.itch.io/cyclops-2d-pixel-art" target="_blank">Mattz Art on itch.io</a></td>
+                            <td>Free for personal/commercial use; do not resell or redistribute as standalone; credit appreciated but not required :contentReference[oaicite:10]{index=10}</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
-            <p class="references-note">
-                All external assets used in this project are available for free, non-commercial use and properly attributed to their original creators.
-            </p>
         </div>
     </section>
+
 
     <!-- 9 & 10. Presentations Section -->
     <section id="postmortem" class="section section-dark">
@@ -509,33 +526,41 @@
                     <h3>What is one thing your team did really well?</h3>
                     <div class="reflection-answer">
                         <p>
-                            [INSERT DETAILED RESPONSE - Example: "Our team excelled at maintaining consistent communication and collaboration throughout the project. We held daily 15-minute standup meetings where each member shared their progress, blockers, and plans for the day. This practice kept everyone aligned and allowed us to quickly address issues before they became major problems."]
+                            Our team communicated clearly and pitched in wherever needed. Although each of us had a main role (backend logic for Aryan and Veer; frontend art and animations for Rajbir and Mario), anyone would jump in to help without hesitation if someone got stuck. That flexibility kept us moving forward without delays.
                         </p>
                         <p>
-                            <strong>Evidence:</strong> [INSERT SPECIFIC EVIDENCE - Example: "This is evidenced by our commit history showing regular, well-documented contributions from all team members, our meeting notes documenting 45+ standup sessions, and the fact that we delivered all major milestones on time despite encountering several technical challenges."]
+                            <strong>Evidence:</strong> Our commit history shows several instances where team members edited each other’s files to fix bugs or add features.
                         </p>
                     </div>
                 </div>
+
 
                 <div class="reflection-question">
                     <h3>If you had 2 more weeks, what would your top 3 priorities be?</h3>
                     <div class="reflection-answer">
                         <ol class="priorities-list">
                             <li>
-                                <strong>[PRIORITY 1 - e.g., Polish and User Experience]</strong>
-                                <p>[DETAILED EXPLANATION - e.g., "We would focus on refining the user interface, adding visual feedback for player actions, and implementing a comprehensive tutorial system. Several playtesters mentioned that some game mechanics weren't immediately intuitive."]</p>
+                                <strong>Enhance Visual Indications for Buffs</strong>
+                                <p>
+                                    We would add clearer on‐screen cues whenever a buff activates—for example, having the player sprite glow gold when “Soul Shield” is active, a brief pop‐up text like “Grab+2 Damage” when Tidal Pull triggers, and a small health‐bar pulse when a healing buff kicks in. This ensures players immediately understand the impact of each buff without having to check numbers manually.
+                                </p>
                             </li>
                             <li>
-                                <strong>[PRIORITY 2 - e.g., Additional Content]</strong>
-                                <p>[DETAILED EXPLANATION - e.g., "We would add 3-5 more levels to provide a more complete gameplay experience. Our current game can be completed in about 15 minutes, and players expressed desire for more content."]</p>
+                                <strong>Add More “Action” to Animations</strong>
+                                <p>
+                                    We would make character sprites move slightly toward their target when they Attack or Grab, such as a small lunge forward—and add a brief camera shake on heavy hits. At the same time, we’d smooth out frame transitions so each animation (idle, attack, hurt) looks more fluid. These tweaks would make combat feel more dynamic and engaging.
+                                </p>
                             </li>
                             <li>
-                                <strong>[PRIORITY 3 - e.g., Technical Optimization]</strong>
-                                <p>[DETAILED EXPLANATION - e.g., "We would optimize performance, particularly for the WebGL build, and fix the remaining minor bugs identified during our final playtest. This would ensure a smoother experience across all platforms."]</p>
+                                <strong>Fix Death Logic and Return to Start</strong>
+                                <p>
+                                    We would correct the game logic so that when the player’s health reaches zero, the scene immediately fades out and resets to the starting screen instead of freezing or crashing. This ensures a seamless experience, once the player dies, they’re returned to the beginning of the level with a brief “Try Again” prompt.
+                                </p>
                             </li>
                         </ol>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
