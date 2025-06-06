@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vindicta - Unity Game Project</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-title">Vindicta</h1>
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#play">Play Game</a></li>
+                <li><a href="#screenshots">Screenshots</a></li>
+                <li><a href="#trailer">Trailer</a></li>
+                <li><a href="#playtesting">Playtesting</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#postmortem">Postmortem</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Vindicta</h1>
+            <p class="hero-subtitle">Command the Gods • Forge Your Destiny • Conquer Olympus</p>
+            <div class="hero-buttons">
+                <a href="#play" class="btn btn-primary">Play Now</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1. Game Description Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About the Game</h2>
+            <div class="game-info">
+                <div class="game-description">
+                    <h3>Game Overview</h3>
+                    <p class="description-text">
+                        <strong>Vindicta</strong> is a [INSERT GENRE - e.g., strategy/action-RPG/tactical] game that challenges players to [INSERT CORE GAMEPLAY CONCEPT - e.g., command mythological gods in epic battles]. 
+                        Set in ancient Greece during the age of gods and heroes, players must [INSERT MAIN OBJECTIVE - e.g., unite the feuding deities of Olympus] while [INSERT KEY MECHANICS - e.g., managing divine powers and mortal followers].
+                    </p>
+                    
+                    <h3>Inspiration & Influences</h3>
+                    <p class="description-text">
+                        Our game draws inspiration from Greek mythology, classic strategy games like Age of Empires, and modern pixel art titles like Hyper Light Drifter. 
+                        The unique twist that sets Vindicta apart is [INSERT UNIQUE FEATURE - e.g., the ability to switch between controlling different gods, each with unique abilities and playstyles that affect both combat and puzzle-solving].
+                    </p>
+
+                    <h3>What Makes It Special</h3>
+                    <ul class="features-list">
+                        <li>Play as legendary Greek gods with unique divine powers</li>
+                        <li>Beautiful hand-crafted pixel art bringing mythology to life</li>
+                        <li>Strategic combat system with elemental interactions</li>
+                        <li>Rich narrative inspired by classical Greek literature</li>
+                    </ul>
+                </div>
+
+                <div class="game-specs">
+                    <h3>Game Details</h3>
+                    <div class="specs-grid">
+                        <div class="spec-item">
+                            <span class="spec-label">Genre:</span>
+                            <span class="spec-value">Mythology Strategy/Action-RPG</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Platforms:</span>
+                            <span class="spec-value">PC (Windows/Mac), WebGL</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Engine:</span>
+                            <span class="spec-value">Unity [INSERT VERSION]</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Rating:</span>
+                            <span class="spec-value">T for Teen (Fantasy Violence, Mild Language)</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Launch Date:</span>
+                            <span class="spec-value">[INSERT DATE]</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Development Time:</span>
+                            <span class="spec-value">[INSERT TIMEFRAME - e.g., 10 weeks]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Playable Game Embed Section -->
+    <section id="play" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Play the Game</h2>
+            
+            <!-- WebGL Embed -->
+            <div class="game-embed">
+                <div class="webgl-container">
+                    <!-- Replace with your WebGL build -->
+                    <div class="game-placeholder">
+                        <p>WebGL Build Embed</p>
+                        <p class="placeholder-text">Upload your WebGL build and replace this placeholder</p>
+                        <!-- Example iframe for WebGL:
+                        <iframe src="./webgl-build/index.html" 
+                                width="960" 
+                                height="600" 
+                                frameborder="0" 
+                                allowfullscreen>
+                        </iframe>
+                        -->
+                    </div>
+                </div>
+                
+                <!-- Download Links -->
+                <div class="download-section">
+                    <h3>Download for Desktop</h3>
+                    <div class="download-buttons">
+                        <a href="#" class="download-btn">
+                            <span class="platform">Windows</span>
+                            <span class="file-size">[INSERT SIZE - e.g., 45 MB]</span>
+                        </a>
+                        <a href="#" class="download-btn">
+                            <span class="platform">Mac</span>
+                            <span class="file-size">[INSERT SIZE - e.g., 48 MB]</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Screenshots Section -->
+    <section id="screenshots" class="section">
+        <div class="container">
+            <h2 class="section-title">Screenshots</h2>
+            <div class="screenshots-grid">
+                <div class="screenshot-item">
+                    <img src="screenshots/screenshot1.png" alt="Main Menu" class="screenshot-img">
+                    <p class="screenshot-caption">Main Menu Interface</p>
+                </div>
+                <div class="screenshot-item">
+                    <img src="screenshots/screenshot2.png" alt="Gameplay" class="screenshot-img">
+                    <p class="screenshot-caption">Core Gameplay Mechanics</p>
+                </div>
+                <div class="screenshot-item">
+                    <img src="screenshots/screenshot3.png" alt="Level Design" class="screenshot-img">
+                    <p class="screenshot-caption">Level Design Showcase</p>
+                </div>
+                <div class="screenshot-item">
+                    <img src="screenshots/screenshot4.png" alt="Character Abilities" class="screenshot-img">
+                    <p class="screenshot-caption">Special Abilities in Action</p>
+                </div>
+                <div class="screenshot-item">
+                    <img src="screenshots/screenshot5.png" alt="Victory Screen" class="screenshot-img">
+                    <p class="screenshot-caption">Victory/End Game Screen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Game Trailer Section -->
+    <section id="trailer" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Game Trailer</h2>
+            <div class="trailer-container">
+                <div class="video-wrapper">
+                    <!-- Replace with your YouTube embed -->
+                    <iframe width="560" 
+                            height="315" 
+                            src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+                            title="Vindicta Game Trailer" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="trailer-description">
+                    <h3>Trailer Highlights</h3>
+                    <p>Watch our 60-second trailer showcasing the core gameplay mechanics, visual style, and exciting moments from Vindicta. The trailer features [INSERT SPECIFIC SCENES - e.g., character movement, puzzle-solving, combat sequences, level progression].</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Playtesting Reports Section -->
+    <section id="playtesting" class="section">
+        <div class="container">
+            <h2 class="section-title">Playtesting Reports</h2>
+            
+            <!-- Early Development Playtest -->
+            <div class="playtest-report">
+                <h3>Early Development Playtest (Week 3)</h3>
+                <div class="playtest-details">
+                    <div class="playtest-info">
+                        <p><strong>Development Phase:</strong> Core mechanics implementation</p>
+                        <p><strong>Test Method:</strong> In-person observation with think-aloud protocol</p>
+                        <p><strong>Participants:</strong> 5 students (3 CS majors, 2 non-CS), ages 19-22</p>
+                    </div>
+                    <div class="playtest-feedback">
+                        <h4>Key Feedback:</h4>
+                        <ul>
+                            <li>[INSERT SPECIFIC FEEDBACK 1]</li>
+                            <li>[INSERT SPECIFIC FEEDBACK 2]</li>
+                            <li>[INSERT SPECIFIC FEEDBACK 3]</li>
+                        </ul>
+                        <h4>Changes Made:</h4>
+                        <ul>
+                            <li>[INSERT CHANGE 1]</li>
+                            <li>[INSERT CHANGE 2]</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mid Development Playtest -->
+            <div class="playtest-report">
+                <h3>Mid-Development Playtest (Week 6)</h3>
+                <div class="playtest-details">
+                    <div class="playtest-info">
+                        <p><strong>Development Phase:</strong> Level design and UI implementation</p>
+                        <p><strong>Test Method:</strong> Remote testing via screen share</p>
+                        <p><strong>Participants:</strong> 7 participants from various gaming backgrounds</p>
+                    </div>
+                    <div class="playtest-feedback">
+                        <h4>Key Feedback:</h4>
+                        <ul>
+                            <li>[INSERT SPECIFIC FEEDBACK 1]</li>
+                            <li>[INSERT SPECIFIC FEEDBACK 2]</li>
+                            <li>[INSERT SPECIFIC FEEDBACK 3]</li>
+                        </ul>
+                        <h4>Changes Made:</h4>
+                        <ul>
+                            <li>[INSERT CHANGE 1]</li>
+                            <li>[INSERT CHANGE 2]</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final Playtest -->
+            <div class="playtest-report final-playtest">
+                <h3>Final Playtest (Week 9)</h3>
+                <div class="playtest-details">
+                    <div class="playtest-info">
+                        <p><strong>Development Phase:</strong> Polish and final adjustments</p>
+                        <p><strong>Test Method:</strong> Structured gameplay sessions with post-game surveys</p>
+                        <p><strong>Participants:</strong> 12 players (diverse demographics and gaming experience)</p>
+                    </div>
+                    <div class="playtest-feedback">
+                        <h4>Detailed Feedback:</h4>
+                        <div class="feedback-grid">
+                            <div class="feedback-category">
+                                <h5>Gameplay (Average: X/5)</h5>
+                                <ul>
+                                    <li>[INSERT FEEDBACK 1]</li>
+                                    <li>[INSERT FEEDBACK 2]</li>
+                                </ul>
+                            </div>
+                            <div class="feedback-category">
+                                <h5>Controls (Average: X/5)</h5>
+                                <ul>
+                                    <li>[INSERT FEEDBACK 1]</li>
+                                    <li>[INSERT FEEDBACK 2]</li>
+                                </ul>
+                            </div>
+                            <div class="feedback-category">
+                                <h5>Visuals (Average: X/5)</h5>
+                                <ul>
+                                    <li>[INSERT FEEDBACK 1]</li>
+                                    <li>[INSERT FEEDBACK 2]</li>
+                                </ul>
+                            </div>
+                            <div class="feedback-category">
+                                <h5>Overall Fun (Average: X/5)</h5>
+                                <ul>
+                                    <li>[INSERT FEEDBACK 1]</li>
+                                    <li>[INSERT FEEDBACK 2]</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h4>Planned Changes:</h4>
+                        <ul>
+                            <li>[INSERT PLANNED CHANGE 1]</li>
+                            <li>[INSERT PLANNED CHANGE 2]</li>
+                            <li>[INSERT PLANNED CHANGE 3]</li>
+                        </ul>
+                        <h4>Future Recommendations:</h4>
+                        <ul>
+                            <li>[INSERT RECOMMENDATION 1]</li>
+                            <li>[INSERT RECOMMENDATION 2]</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Credits Section -->
+    <section id="team" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Team Credits</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-info">
+                        <h3>[TEAM MEMBER 1 NAME]</h3>
+                        <p class="member-role">[ROLE - e.g., Lead Developer, Game Designer]</p>
+                        <p class="member-contact">[EMAIL@example.com]</p>
+                    </div>
+                    <div class="member-contributions">
+                        <h4>Key Contributions:</h4>
+                        <ul>
+                            <li>[CONTRIBUTION 1]</li>
+                            <li>[CONTRIBUTION 2]</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-info">
+                        <h3>[TEAM MEMBER 2 NAME]</h3>
+                        <p class="member-role">[ROLE]</p>
+                        <p class="member-contact">[EMAIL@example.com]</p>
+                    </div>
+                    <div class="member-contributions">
+                        <h4>Key Contributions:</h4>
+                        <ul>
+                            <li>[CONTRIBUTION 1]</li>
+                            <li>[CONTRIBUTION 2]</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Add more team members as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Source Code Section -->
+    <section id="source-code" class="section">
+        <div class="container">
+            <h2 class="section-title">Source Code</h2>
+            <div class="source-code-info">
+                <div class="repo-links">
+                    <a href="[INSERT GITHUB/REPOSITORY URL]" class="btn btn-primary" target="_blank">
+                        View on GitHub
+                    </a>
+                    <a href="[INSERT DOWNLOAD ZIP URL]" class="btn btn-secondary">
+                        Download ZIP
+                    </a>
+                </div>
+                
+                <div class="project-details">
+                    <h3>Project Information</h3>
+                    <div class="details-grid">
+                        <div class="detail-item">
+                            <span class="detail-label">Unity Version:</span>
+                            <span class="detail-value">[INSERT UNITY VERSION - e.g., 2022.3.21f1]</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Project Website:</span>
+                            <span class="detail-value">[INSERT WEBSITE URL]</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Last Updated:</span>
+                            <span class="detail-value">[INSERT DATE]</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. References Section -->
+    <section id="references" class="section">
+        <div class="container">
+            <h2 class="section-title">Asset References</h2>
+            <div class="references-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Asset Name</th>
+                            <th>Type</th>
+                            <th>Source</th>
+                            <th>License</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>[ASSET NAME 1]</td>
+                            <td>[TYPE - e.g., Sound Effect]</td>
+                            <td><a href="[URL]" target="_blank">[SOURCE NAME]</a></td>
+                            <td>[LICENSE - e.g., CC0, Free for commercial use]</td>
+                        </tr>
+                        <tr>
+                            <td>[ASSET NAME 2]</td>
+                            <td>[TYPE - e.g., 3D Model]</td>
+                            <td><a href="[URL]" target="_blank">[SOURCE NAME]</a></td>
+                            <td>[LICENSE]</td>
+                        </tr>
+                        <tr>
+                            <td>[ASSET NAME 3]</td>
+                            <td>[TYPE - e.g., Texture]</td>
+                            <td><a href="[URL]" target="_blank">[SOURCE NAME]</a></td>
+                            <td>[LICENSE]</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+            <p class="references-note">
+                All external assets used in this project are available for free, non-commercial use and properly attributed to their original creators.
+            </p>
+        </div>
+    </section>
+
+    <!-- 9 & 10. Presentations Section -->
+    <section id="postmortem" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Project Presentations</h2>
+            
+            <!-- Postmortem Presentation -->
+            <div class="presentation-block">
+                <h3>Postmortem Presentation</h3>
+                <p>Our 2-slide postmortem covering what went right and what went wrong during development.</p>
+                <div class="presentation-embed">
+                    <!-- Replace with your presentation embed -->
+                    <div class="presentation-placeholder">
+                        <p>Postmortem Slides</p>
+                        <p class="placeholder-text">Upload your postmortem presentation here</p>
+                        <!-- Example for Google Slides embed:
+                        <iframe src="[GOOGLE_SLIDES_EMBED_URL]" 
+                                width="600" 
+                                height="400" 
+                                frameborder="0" 
+                                allowfullscreen>
+                        </iframe>
+                        -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final Game Presentation -->
+            <div class="presentation-block">
+                <h3>Final Game Presentation</h3>
+                <p>Our comprehensive 5-slide presentation from demo day showcasing the complete game.</p>
+                <div class="presentation-embed">
+                    <div class="presentation-placeholder">
+                        <p>Final Presentation Slides</p>
+                        <p class="placeholder-text">Upload your final presentation here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. Team Reflection Section -->
+    <section id="reflection" class="section">
+        <div class="container">
+            <h2 class="section-title">Team Reflection</h2>
+            
+            <div class="reflection-content">
+                <div class="reflection-question">
+                    <h3>What is one thing your team did really well?</h3>
+                    <div class="reflection-answer">
+                        <p>
+                            [INSERT DETAILED RESPONSE - Example: "Our team excelled at maintaining consistent communication and collaboration throughout the project. We held daily 15-minute standup meetings where each member shared their progress, blockers, and plans for the day. This practice kept everyone aligned and allowed us to quickly address issues before they became major problems."]
+                        </p>
+                        <p>
+                            <strong>Evidence:</strong> [INSERT SPECIFIC EVIDENCE - Example: "This is evidenced by our commit history showing regular, well-documented contributions from all team members, our meeting notes documenting 45+ standup sessions, and the fact that we delivered all major milestones on time despite encountering several technical challenges."]
+                        </p>
+                    </div>
+                </div>
+
+                <div class="reflection-question">
+                    <h3>If you had 2 more weeks, what would your top 3 priorities be?</h3>
+                    <div class="reflection-answer">
+                        <ol class="priorities-list">
+                            <li>
+                                <strong>[PRIORITY 1 - e.g., Polish and User Experience]</strong>
+                                <p>[DETAILED EXPLANATION - e.g., "We would focus on refining the user interface, adding visual feedback for player actions, and implementing a comprehensive tutorial system. Several playtesters mentioned that some game mechanics weren't immediately intuitive."]</p>
+                            </li>
+                            <li>
+                                <strong>[PRIORITY 2 - e.g., Additional Content]</strong>
+                                <p>[DETAILED EXPLANATION - e.g., "We would add 3-5 more levels to provide a more complete gameplay experience. Our current game can be completed in about 15 minutes, and players expressed desire for more content."]</p>
+                            </li>
+                            <li>
+                                <strong>[PRIORITY 3 - e.g., Technical Optimization]</strong>
+                                <p>[DETAILED EXPLANATION - e.g., "We would optimize performance, particularly for the WebGL build, and fix the remaining minor bugs identified during our final playtest. This would ensure a smoother experience across all platforms."]</p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Vindicta Game Project. Created for CSS 385 at [University Name].</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
