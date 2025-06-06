@@ -8,8 +8,28 @@
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f8f9fa;
+    color: #FFD700;
+    background-color: #0f0f23;
+    background-image: 
+        radial-gradient(circle at 25% 25%, #1a1a2e 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, #2d1b69 0%, transparent 50%);
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        transparent 50%, 
+        rgba(0, 255, 0, 0.02) 50%
+    );
+    background-size: 100% 4px;
+    pointer-events: none;
+    z-index: 9999;
 }
 
 /* Container */
@@ -21,15 +41,16 @@ body {
 
 /* Navigation */
 .navbar {
-    background: linear-gradient(90deg, #1a1a2e 0%, #16213e 50%, #1a1a2e 100%);
-    color: #D4AF37;
+    background: linear-gradient(90deg, #0f0f23 0%, #1a1a2e 50%, #0f0f23 100%);
+    color: #FFD700;
     padding: 1rem 0;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    border-bottom: 2px solid #CD853F;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+    border-bottom: 3px solid #8B0000;
+    font-family: 'Courier New', monospace;
 }
 
 .nav-container {
@@ -70,8 +91,8 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 20%, #8B4513 60%, #CD853F 100%);
-    color: #D4AF37;
+    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 30%, #2d1b69 60%, #8B0000 100%);
+    color: #FFD700;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -89,9 +110,9 @@ body {
     right: 0;
     bottom: 0;
     background: 
-        radial-gradient(circle at 20% 80%, rgba(139, 69, 19, 0.3) 0%, transparent 50%),
-        radial-gradient(circle at 80% 20%, rgba(205, 133, 63, 0.2) 0%, transparent 50%),
-        radial-gradient(circle at 40% 40%, rgba(26, 26, 46, 0.8) 0%, transparent 50%);
+        radial-gradient(circle at 20% 80%, rgba(139, 0, 0, 0.4) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(45, 27, 105, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(15, 15, 35, 0.8) 0%, transparent 50%);
     z-index: 1;
 }
 
@@ -110,15 +131,34 @@ body {
     font-weight: 900;
     margin-bottom: 1rem;
     text-shadow: 
-        3px 3px 0px #8B4513,
-        6px 6px 10px rgba(0,0,0,0.8),
-        0 0 30px rgba(212, 175, 55, 0.5);
-    letter-spacing: 0.2em;
-    font-family: 'Inter', serif;
-    background: linear-gradient(45deg, #FFD700, #FFA500, #CD853F);
+        4px 4px 0px #8B0000,
+        8px 8px 0px #2d1b69,
+        12px 12px 20px rgba(0,0,0,0.9),
+        0 0 40px rgba(255, 215, 0, 0.7);
+    letter-spacing: 0.15em;
+    font-family: 'Courier New', monospace;
+    background: linear-gradient(45deg, #FFD700, #FFA500, #FF6347, #FFD700);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    animation: flicker 3s infinite alternate;
+}
+
+@keyframes flicker {
+    0%, 100% { 
+        text-shadow: 
+            4px 4px 0px #8B0000,
+            8px 8px 0px #2d1b69,
+            12px 12px 20px rgba(0,0,0,0.9),
+            0 0 40px rgba(255, 215, 0, 0.7);
+    }
+    50% { 
+        text-shadow: 
+            4px 4px 0px #8B0000,
+            8px 8px 0px #2d1b69,
+            12px 12px 20px rgba(0,0,0,0.9),
+            0 0 60px rgba(255, 215, 0, 0.9);
+    }
 }
 
 .hero-subtitle {
@@ -147,41 +187,57 @@ body {
 }
 
 .btn-primary {
-    background: linear-gradient(45deg, #CD853F, #DAA520);
-    color: #1a1a1a;
-    border: 2px solid #FFD700;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    background: linear-gradient(45deg, #8B0000, #FF6347);
+    color: #FFD700;
+    border: 3px solid #FFD700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
     font-weight: 700;
+    font-family: 'Courier New', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 .btn-primary:hover {
-    background: linear-gradient(45deg, #DAA520, #FFD700);
+    background: linear-gradient(45deg, #FF6347, #FFD700);
+    color: #0f0f23;
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(218, 165, 32, 0.4);
-    border-color: #FFA500;
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.5);
+    border-color: #FF6347;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
 .btn-secondary {
     background: transparent;
-    color: #D4AF37;
-    border: 2px solid #D4AF37;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    color: #FFD700;
+    border: 3px solid #2d1b69;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    font-family: 'Courier New', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
 .btn-secondary:hover {
-    background: #D4AF37;
-    color: #1a1a2e;
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    background: #2d1b69;
+    color: #FFD700;
+    border-color: #FFD700;
+    box-shadow: 0 6px 20px rgba(45, 27, 105, 0.5);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
 }
 
 /* Sections */
 .section {
     padding: 80px 0;
+    background-color: rgba(15, 15, 35, 0.95);
+    position: relative;
+}
+
+.section:nth-child(even) {
+    background-color: rgba(26, 26, 46, 0.95);
 }
 
 .section-dark {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f1419 100%);
-    color: #D4AF37;
+    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 30%, #2d1b69 70%, #8B0000 100%);
+    color: #FFD700;
     position: relative;
 }
 
@@ -193,8 +249,8 @@ body {
     right: 0;
     bottom: 0;
     background: 
-        radial-gradient(circle at 30% 20%, rgba(205, 133, 63, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 70% 80%, rgba(139, 69, 19, 0.1) 0%, transparent 50%);
+        radial-gradient(circle at 30% 20%, rgba(139, 0, 0, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 70% 80%, rgba(45, 27, 105, 0.2) 0%, transparent 50%);
     pointer-events: none;
 }
 
@@ -203,7 +259,13 @@ body {
     font-weight: 700;
     text-align: center;
     margin-bottom: 3rem;
-    color: #333;
+    color: #FFD700;
+    font-family: 'Orbitron', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-shadow: 
+        2px 2px 0px #8B0000,
+        4px 4px 10px rgba(0,0,0,0.8);
 }
 
 .section-dark .section-title {
@@ -211,6 +273,168 @@ body {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     position: relative;
     z-index: 1;
+}
+
+/* Story Banner */
+.story-banner {
+    background: linear-gradient(135deg, #8B0000 0%, #2d1b69 50%, #0f0f23 100%);
+    border-radius: 15px;
+    padding: 3rem;
+    margin: 2rem 0 4rem 0;
+    border: 3px solid #FFD700;
+    position: relative;
+    overflow: hidden;
+}
+
+.story-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: 
+        radial-gradient(circle at 20% 20%, rgba(255, 215, 0, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(139, 0, 0, 0.2) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.story-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.story-title {
+    font-family: 'Orbitron', monospace;
+    font-size: 2.5rem;
+    color: #FFD700;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-shadow: 
+        3px 3px 0px #8B0000,
+        6px 6px 15px rgba(0,0,0,0.8);
+}
+
+.story-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #FFD700;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+/* Three Realms Section */
+.realms-section {
+    margin: 4rem 0;
+}
+
+.realms-title {
+    font-family: 'Orbitron', monospace;
+    font-size: 2rem;
+    color: #FFD700;
+    text-align: center;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.realms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.realm-card {
+    border-radius: 15px;
+    padding: 2.5rem;
+    text-align: center;
+    border: 3px solid;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.realm-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.1;
+    pointer-events: none;
+}
+
+.zeus-realm {
+    background: linear-gradient(135deg, #000080 0%, #4169E1 50%, #87CEEB 100%);
+    border-color: #FFD700;
+}
+
+.zeus-realm::before {
+    background: radial-gradient(circle, #FFD700 0%, transparent 70%);
+}
+
+.poseidon-realm {
+    background: linear-gradient(135deg, #003366 0%, #006699 50%, #0099CC 100%);
+    border-color: #00CED1;
+}
+
+.poseidon-realm::before {
+    background: radial-gradient(circle, #00CED1 0%, transparent 70%);
+}
+
+.hades-realm {
+    background: linear-gradient(135deg, #330000 0%, #660000 50%, #990000 100%);
+    border-color: #FF4500;
+}
+
+.hades-realm::before {
+    background: radial-gradient(circle, #FF4500 0%, transparent 70%);
+}
+
+.realm-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+.realm-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.realm-card h4 {
+    font-family: 'Orbitron', monospace;
+    font-size: 1.5rem;
+    color: #FFD700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.realm-card p {
+    color: #FFD700;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+.blessing {
+    background: rgba(255, 215, 0, 0.2);
+    border: 2px solid #FFD700;
+    border-radius: 25px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 700;
+    color: #FFD700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.9rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
 }
 
 /* Game Info Section */
@@ -423,8 +647,30 @@ body {
 }
 
 .trailer-description h3 {
-    color: #64ffda;
+    color: #FFD700;
     margin-bottom: 1rem;
+    font-family: 'Orbitron', monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.trailer-features {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+.trailer-features li {
+    padding: 0.75rem 0;
+    color: #FFD700;
+    font-size: 1.1rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+    border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.trailer-features li:last-child {
+    border-bottom: none;
 }
 
 /* Playtesting Section */
@@ -880,6 +1126,32 @@ tr:hover {
     .download-buttons {
         flex-direction: column;
         align-items: center;
+    }
+    
+    .story-banner {
+        padding: 2rem;
+        margin: 1rem 0 2rem 0;
+    }
+    
+    .story-title {
+        font-size: 2rem;
+    }
+    
+    .story-text {
+        font-size: 1.1rem;
+    }
+    
+    .realms-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .realm-card {
+        padding: 2rem;
+    }
+    
+    .realm-icon {
+        font-size: 3rem;
     }
 }
 

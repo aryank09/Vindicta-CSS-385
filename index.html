@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vindicta - Unity Game Project</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -28,7 +28,7 @@
     <section class="hero">
         <div class="hero-content">
             <h1 class="hero-title">Vindicta</h1>
-            <p class="hero-subtitle">Command the Gods • Forge Your Destiny • Conquer Olympus</p>
+            <p class="hero-subtitle">Free the Gods • Reclaim Olympus • Defeat Chronos</p>
             <div class="hero-buttons">
                 <a href="#play" class="btn btn-primary">Play Now</a>
                 <a href="#about" class="btn btn-secondary">Learn More</a>
@@ -40,26 +40,70 @@
     <section id="about" class="section">
         <div class="container">
             <h2 class="section-title">About the Game</h2>
+            
+            <!-- Story Banner -->
+            <div class="story-banner">
+                <div class="story-content">
+                    <h3 class="story-title">The Fall of Olympus</h3>
+                    <p class="story-text">
+                        When the ancient titan <strong>Chronos</strong> breaks free from the depths of Tartarus, 
+                        his wrath consumes Mount Olympus. The mighty gods <strong>Zeus</strong>, <strong>Poseidon</strong>, 
+                        and <strong>Hades</strong> are cast into the darkest corners of their own realms, 
+                        imprisoned by chains of time itself.
+                    </p>
+                    <p class="story-text">
+                        As a brave hero, you must venture through three treacherous domains to free each god 
+                        and claim their <strong>Divine Blessings</strong> - the only power capable of standing against Chronos.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Three Realms Section -->
+            <div class="realms-section">
+                <h3 class="realms-title">Journey Through Three Realms</h3>
+                <div class="realms-grid">
+                    <div class="realm-card zeus-realm">
+                        <div class="realm-icon">⚡</div>
+                        <h4>Zeus's Domain</h4>
+                        <p>Navigate the storm-torn peaks of Olympus to free the King of Gods from his lightning-cage prison.</p>
+                        <div class="blessing">Divine Lightning Attacks</div>
+                    </div>
+                    <div class="realm-card poseidon-realm">
+                        <div class="realm-icon">🌊</div>
+                        <h4>Poseidon's Depths</h4>
+                        <p>Dive into the crushing depths of the ocean realm where the Sea God battles endless tidal chains.</p>
+                        <div class="blessing">Water & Storm Control</div>
+                    </div>
+                    <div class="realm-card hades-realm">
+                        <div class="realm-icon">🔥</div>
+                        <h4>Hades' Underworld</h4>
+                        <p>Descend into the fiery underworld where the Lord of the Dead is trapped in shadow-forged bonds.</p>
+                        <div class="blessing">Shadow Manipulation</div>
+                    </div>
+                </div>
+            </div>
+
             <div class="game-info">
                 <div class="game-description">
-                    <h3>Game Overview</h3>
+                    <h3>Gameplay & Mechanics</h3>
                     <p class="description-text">
-                        <strong>Vindicta</strong> is a [INSERT GENRE - e.g., strategy/action-RPG/tactical] game that challenges players to [INSERT CORE GAMEPLAY CONCEPT - e.g., command mythological gods in epic battles]. 
-                        Set in ancient Greece during the age of gods and heroes, players must [INSERT MAIN OBJECTIVE - e.g., unite the feuding deities of Olympus] while [INSERT KEY MECHANICS - e.g., managing divine powers and mortal followers].
+                        <strong>Vindicta</strong> is a retro-inspired action-adventure game that challenges players to battle through the fallen realm of Olympus. 
+                        Each freed god grants you unique abilities that stack and evolve, creating a progressive power system that transforms 
+                        both exploration and combat as you advance toward the final confrontation with Chronos.
                     </p>
                     
                     <h3>Inspiration & Influences</h3>
                     <p class="description-text">
-                        Our game draws inspiration from Greek mythology, classic strategy games like Age of Empires, and modern pixel art titles like Hyper Light Drifter. 
-                        The unique twist that sets Vindicta apart is [INSERT UNIQUE FEATURE - e.g., the ability to switch between controlling different gods, each with unique abilities and playstyles that affect both combat and puzzle-solving].
+                        Drawing inspiration from classic 16-bit masterpieces like Castlevania and Metroid, combined with the epic storytelling of Greek mythology. 
+                        The authentic pixel art style pays homage to the golden age of gaming while bringing ancient legends to life in vivid detail.
                     </p>
 
-                    <h3>What Makes It Special</h3>
+                    <h3>Divine Blessing System</h3>
                     <ul class="features-list">
-                        <li>Play as legendary Greek gods with unique divine powers</li>
-                        <li>Beautiful hand-crafted pixel art bringing mythology to life</li>
-                        <li>Strategic combat system with elemental interactions</li>
-                        <li>Rich narrative inspired by classical Greek literature</li>
+                        <li>Free Zeus to unlock devastating lightning attacks and aerial mobility</li>
+                        <li>Rescue Poseidon to command water currents and storm barriers</li>
+                        <li>Liberate Hades to manipulate shadows and traverse the underworld</li>
+                        <li>Combine divine powers for devastating combo attacks against Chronos</li>
                     </ul>
                 </div>
 
@@ -68,11 +112,11 @@
                     <div class="specs-grid">
                         <div class="spec-item">
                             <span class="spec-label">Genre:</span>
-                            <span class="spec-value">Mythology Strategy/Action-RPG</span>
+                            <span class="spec-value">Retro Action-Adventure</span>
                         </div>
                         <div class="spec-item">
                             <span class="spec-label">Platforms:</span>
-                            <span class="spec-value">PC (Windows/Mac), WebGL</span>
+                            <span class="spec-value">WebGL Browser Game</span>
                         </div>
                         <div class="spec-item">
                             <span class="spec-label">Engine:</span>
@@ -80,15 +124,15 @@
                         </div>
                         <div class="spec-item">
                             <span class="spec-label">Rating:</span>
-                            <span class="spec-value">T for Teen (Fantasy Violence, Mild Language)</span>
+                            <span class="spec-value">T for Teen (Fantasy Violence)</span>
                         </div>
                         <div class="spec-item">
-                            <span class="spec-label">Launch Date:</span>
-                            <span class="spec-value">[INSERT DATE]</span>
+                            <span class="spec-label">Art Style:</span>
+                            <span class="spec-value">16-bit Pixel Art</span>
                         </div>
                         <div class="spec-item">
-                            <span class="spec-label">Development Time:</span>
-                            <span class="spec-value">[INSERT TIMEFRAME - e.g., 10 weeks]</span>
+                            <span class="spec-label">Progression:</span>
+                            <span class="spec-value">Divine Blessing System</span>
                         </div>
                     </div>
                 </div>
@@ -119,20 +163,7 @@
                     </div>
                 </div>
                 
-                <!-- Download Links -->
-                <div class="download-section">
-                    <h3>Download for Desktop</h3>
-                    <div class="download-buttons">
-                        <a href="#" class="download-btn">
-                            <span class="platform">Windows</span>
-                            <span class="file-size">[INSERT SIZE - e.g., 45 MB]</span>
-                        </a>
-                        <a href="#" class="download-btn">
-                            <span class="platform">Mac</span>
-                            <span class="file-size">[INSERT SIZE - e.g., 48 MB]</span>
-                        </a>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
@@ -144,23 +175,23 @@
             <div class="screenshots-grid">
                 <div class="screenshot-item">
                     <img src="screenshots/screenshot1.png" alt="Main Menu" class="screenshot-img">
-                    <p class="screenshot-caption">Main Menu Interface</p>
+                    <p class="screenshot-caption">Epic Title Screen</p>
                 </div>
                 <div class="screenshot-item">
-                    <img src="screenshots/screenshot2.png" alt="Gameplay" class="screenshot-img">
-                    <p class="screenshot-caption">Core Gameplay Mechanics</p>
+                    <img src="screenshots/screenshot2.png" alt="Zeus Boss Battle" class="screenshot-img">
+                    <p class="screenshot-caption">Freeing Zeus from Chronos' Prison</p>
                 </div>
                 <div class="screenshot-item">
-                    <img src="screenshots/screenshot3.png" alt="Level Design" class="screenshot-img">
-                    <p class="screenshot-caption">Level Design Showcase</p>
+                    <img src="screenshots/screenshot3.png" alt="Underworld Exploration" class="screenshot-img">
+                    <p class="screenshot-caption">Exploring Hades' Dark Realm</p>
                 </div>
                 <div class="screenshot-item">
-                    <img src="screenshots/screenshot4.png" alt="Character Abilities" class="screenshot-img">
-                    <p class="screenshot-caption">Special Abilities in Action</p>
+                    <img src="screenshots/screenshot4.png" alt="Divine Blessings" class="screenshot-img">
+                    <p class="screenshot-caption">Using Divine Blessing Powers</p>
                 </div>
                 <div class="screenshot-item">
-                    <img src="screenshots/screenshot5.png" alt="Victory Screen" class="screenshot-img">
-                    <p class="screenshot-caption">Victory/End Game Screen</p>
+                    <img src="screenshots/screenshot5.png" alt="Chronos Final Battle" class="screenshot-img">
+                    <p class="screenshot-caption">Final Confrontation with Chronos</p>
                 </div>
             </div>
         </div>
@@ -183,8 +214,15 @@
                     </iframe>
                 </div>
                 <div class="trailer-description">
-                    <h3>Trailer Highlights</h3>
-                    <p>Watch our 60-second trailer showcasing the core gameplay mechanics, visual style, and exciting moments from Vindicta. The trailer features [INSERT SPECIFIC SCENES - e.g., character movement, puzzle-solving, combat sequences, level progression].</p>
+                    <h3>Epic Journey Trailer</h3>
+                    <p>Experience the full scope of your heroic quest in this action-packed trailer showcasing:</p>
+                    <ul class="trailer-features">
+                        <li>⚡ Zeus's lightning-wreathed prison in the storm-torn peaks</li>
+                        <li>🌊 Poseidon's oceanic realm with crushing tidal forces</li>
+                        <li>🔥 Hades' shadow-bound underworld of fire and brimstone</li>
+                        <li>⚔️ Divine blessing abilities combining in epic combat</li>
+                        <li>👑 The ultimate confrontation with Chronos, Titan of Time</li>
+                    </ul>
                 </div>
             </div>
         </div>
